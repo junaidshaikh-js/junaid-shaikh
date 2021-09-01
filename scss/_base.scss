@@ -1,0 +1,15 @@
+$primary-color: #7c3aed;
+$white-background: #ffffff;
+$black-background: #141c3a;
+
+.btn {
+  border: 2px solid $primary-color;
+  border-radius: 13px;
+  color: $primary-color;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: $primary-color;
+  color: white;
+}
