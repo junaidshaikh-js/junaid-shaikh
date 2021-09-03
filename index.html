@@ -17,28 +17,68 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="./css/index.css" />
     <title>Junaid - Home</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="./assets/logo.png" alt="logo" />
-        <div class="bars">
-          <i class="fas fa-2x fa-bars"></i>
+    <!-- header section -->
+    <div class="header-wrapper">
+      <header class="header">
+        <div class="logo">
+          <a href="./index.html"> <img src="./assets/logo.png" alt="logo" /></a>
+          <div class="bars">
+            <i class="fas fa-2x fa-bars"></i>
+          </div>
         </div>
+
+        <div class="navbar-wrapper">
+          <nav>
+            <ul class="nav-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./projects.html">Projects</a></li>
+              <li><a href="./blogs.html">Blogs</a></li>
+              <li>
+                <a href="./contact.html" class="btn btn-primary" role="button"
+                  >Say Hello</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <!-- main section -->
+    <main>
+      <!-- hero section -->
+      <div class="hero-section-wrapper">
+        <section class="hero-section">
+          <div class="hero-section__intro">
+            <h1 class="title">Hi, I'm Junaid 👋</h1>
+            <p class="subtitle">
+              A front-end developer. I code beautiful websites and I love it.
+            </p>
+          </div>
+          <div class="hero-section__buttons">
+            <button class="btn btn-primary">Hire Me</button>
+            <button class="btn btn-secondary">Download CV</button>
+          </div>
+        </section>
       </div>
 
-      <div class="navbar-wrapper">
-        <nav>
-          <ul class="nav-links">
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./blogs.html">Blogs</a></li>
-            <li><a href="./contact.html" class="btn">Say Hello</a></li>
-          </ul>
-        </nav>
+      <!-- about section -->
+      <div class="about-section-wrapper">
+        <section class="about-section">
+          <h2 class="section-title">About Me</h2>
+        </section>
       </div>
-    </header>
+    </main>
+
+    <!-- javaScript -->
+    <script src="./js/index.js"></script>
   </body>
 </html>
