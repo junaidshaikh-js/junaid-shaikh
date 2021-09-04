@@ -41,6 +41,8 @@ a {
 
 body {
   font-family: "Jost", sans-serif;
+  color: #141c3a;
+  height: 20000px;
 }
 
 a:hover:not([class*="btn"]) {
@@ -77,6 +79,56 @@ a:hover:not([class*="btn"]) {
   background-color: transparent;
   color: #7c3aed;
   border: 2px solid #7c3aed;
+}
+
+.section {
+  padding: 3rem 1rem;
+  font-size: 1.2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.top-margin {
+  margin-top: 4rem;
+}
+
+.skill {
+  position: relative;
+  padding: 1rem 0;
+  margin: 0.6rem 0;
+  border: 2px solid #7c3aed;
+  transition: 0.3s;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.skill::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 101%;
+  background-color: #7c3aed;
+  transition: width 0.3s;
+  z-index: -99;
+}
+
+.skill:hover {
+  color: white;
+}
+
+.skill:hover::after {
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .section-title {
+    font-size: 2.8rem;
+  }
 }
 
 .header-wrapper {
@@ -179,23 +231,45 @@ main .hero-section__buttons .btn:first-child {
   margin-right: 1rem;
 }
 
-main .about-section {
+main .about-section-wrapper {
+  padding-top: 6rem;
+  padding-bottom: 14rem;
   background-color: #7c3aed;
-  padding: 3rem 1rem;
-  height: 1000px;
   color: white;
+  z-index: -1;
+}
+
+main .about-section {
   text-align: center;
 }
 
-main .about-section .section-title {
-  font-size: 2rem;
-  text-decoration: underline black;
-  text-decoration-thickness: 5px;
-  font-weight: bold;
+main .skill-section-wrapper {
+  width: 80vw;
+  max-width: 800px;
+  margin: -12rem auto 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px #cca4ff;
+  background-color: white;
+}
+
+main .skill-section {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+main .skill-section .section-title {
+  line-height: 1.5;
+}
+
+main .skill-section__content {
+  padding: 0 2rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 720px) {
-  main .hero-section-wrapper {
+  main .hero-section-wrapper,
+  main .about-section {
     max-width: 700px;
     margin: 0 auto;
   }
@@ -203,8 +277,22 @@ main .about-section .section-title {
     font-size: 1.5rem;
   }
   main .hero-section__intro .title {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 2rem;
+  }
+  main .about-section {
+    font-size: 1.4rem;
+  }
+  main .skill-section__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .main .hero-section-wrapper,
+  .main .about-section {
+    max-width: 800px;
   }
 }
 /*# sourceMappingURL=index.css.map */
