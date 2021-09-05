@@ -51,6 +51,7 @@ a:hover:not([class*="btn"]) {
 }
 
 .section-title {
+  text-align: center;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -90,9 +91,37 @@ a:hover:not([class*="btn"]) {
   width: 100%;
 }
 
+.border-box-shadow {
+  border-radius: 10px;
+  box-shadow: 0 5px 8px rgb(204, 164, 255);
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  background-color: $black-background;
+  color: white;
+  border: 2px solid black;
+}
+
+.src-btn {
+  margin-right: 10px;
+  border: 2px dotted $primary-color;
+  padding: 0.4rem 0.7rem;
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+.src-btn:hover {
+  background: $primary-color;
+  color: white;
+}
+
 // styles above 700px
 @media screen and (min-width: 700px) {
   .section-title {
-    font-size: 2.8rem;
+    font-size: 3.8rem;
   }
 }

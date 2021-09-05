@@ -134,8 +134,6 @@ main {
     width: 80vw;
     max-width: 800px;
     margin: -12rem auto 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 5px rgb(204, 164, 255);
     background-color: white;
   }
 
@@ -153,6 +151,65 @@ main {
       grid-template-columns: 1fr;
     }
   }
+
+  // project section
+  .project-section-wrapper {
+    margin-top: 6rem;
+    min-height: 100vh;
+  }
+
+  .project-section {
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      margin-top: 1rem;
+    }
+
+    .project-item {
+      padding: 1rem;
+      margin: 2rem 0;
+      max-width: 380px;
+      text-align: center;
+
+      &__image {
+        height: 180px;
+        padding: 1rem 0;
+        border-top: 2px solid $black-background;
+      }
+
+      &__info {
+        border-top: 2px solid $black-background;
+        margin-top: 2rem;
+
+        &-title {
+          padding-top: 1rem;
+          font-weight: bold;
+        }
+
+        &-tags {
+          margin: 1rem 0 2rem 0;
+          text-align: left;
+        }
+
+        &-links {
+          text-align: left;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .button {
+      margin: 2rem auto 0 auto;
+
+      a {
+        padding: 1rem 2rem;
+      }
+    }
+  }
 }
 
 // styles above 720px
@@ -161,7 +218,8 @@ main {
   main {
     // hero section
     .hero-section-wrapper,
-    .about-section {
+    .about-section,
+    .project-section {
       max-width: 700px;
       margin: 0 auto;
     }
@@ -171,7 +229,7 @@ main {
         font-size: 1.5rem;
 
         .title {
-          font-size: 4rem;
+          font-size: 4.8rem;
           margin-bottom: 2rem;
         }
       }
@@ -195,10 +253,15 @@ main {
 // styles above 1000px
 
 @media screen and (min-width: 1000px) {
-  .main {
+  main {
     .hero-section-wrapper,
-    .about-section {
-      max-width: 800px;
+    .about-section,
+    .project-section {
+      max-width: 1300px;
+    }
+
+    .project-section {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

@@ -87,6 +87,7 @@ a:hover:not([class*="btn"]) {
 }
 
 .section-title {
+  text-align: center;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -125,9 +126,37 @@ a:hover:not([class*="btn"]) {
   width: 100%;
 }
 
+.border-box-shadow {
+  border-radius: 10px;
+  box-shadow: 0 5px 8px #cca4ff;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  background-color: #141c3a;
+  color: white;
+  border: 2px solid black;
+}
+
+.src-btn {
+  margin-right: 10px;
+  border: 2px dotted #7c3aed;
+  padding: 0.4rem 0.7rem;
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+.src-btn:hover {
+  background: #7c3aed;
+  color: white;
+}
+
 @media screen and (min-width: 700px) {
   .section-title {
-    font-size: 2.8rem;
+    font-size: 3.8rem;
   }
 }
 
@@ -247,8 +276,6 @@ main .skill-section-wrapper {
   width: 80vw;
   max-width: 800px;
   margin: -12rem auto 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 5px 5px #cca4ff;
   background-color: white;
 }
 
@@ -267,9 +294,68 @@ main .skill-section__content {
   grid-template-columns: 1fr;
 }
 
+main .project-section-wrapper {
+  margin-top: 6rem;
+  min-height: 100vh;
+}
+
+main .project-section {
+  display: flex;
+  flex-direction: column;
+}
+
+main .project-section__content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+main .project-section .project-item {
+  padding: 1rem;
+  margin: 2rem 0;
+  max-width: 380px;
+  text-align: center;
+}
+
+main .project-section .project-item__image {
+  height: 180px;
+  padding: 1rem 0;
+  border-top: 2px solid #141c3a;
+}
+
+main .project-section .project-item__info {
+  border-top: 2px solid #141c3a;
+  margin-top: 2rem;
+}
+
+main .project-section .project-item__info-title {
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+main .project-section .project-item__info-tags {
+  margin: 1rem 0 2rem 0;
+  text-align: left;
+}
+
+main .project-section .project-item__info-links {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+main .project-section .button {
+  margin: 2rem auto 0 auto;
+}
+
+main .project-section .button a {
+  padding: 1rem 2rem;
+}
+
 @media screen and (min-width: 720px) {
   main .hero-section-wrapper,
-  main .about-section {
+  main .about-section,
+  main .project-section {
     max-width: 700px;
     margin: 0 auto;
   }
@@ -277,7 +363,7 @@ main .skill-section__content {
     font-size: 1.5rem;
   }
   main .hero-section__intro .title {
-    font-size: 4rem;
+    font-size: 4.8rem;
     margin-bottom: 2rem;
   }
   main .about-section {
@@ -290,9 +376,13 @@ main .skill-section__content {
 }
 
 @media screen and (min-width: 1000px) {
-  .main .hero-section-wrapper,
-  .main .about-section {
-    max-width: 800px;
+  main .hero-section-wrapper,
+  main .about-section,
+  main .project-section {
+    max-width: 1300px;
+  }
+  main .project-section {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 /*# sourceMappingURL=index.css.map */
