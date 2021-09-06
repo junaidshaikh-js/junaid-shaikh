@@ -6,7 +6,6 @@ $font-family: "Jost", sans-serif;
 body {
   font-family: $font-family;
   color: #141c3a;
-  height: 20000px;
 }
 
 a:hover:not([class*="btn"]) {
@@ -46,7 +45,7 @@ a:hover:not([class*="btn"]) {
 }
 
 .section {
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 0 1rem;
   font-size: 1.2rem;
 }
 
@@ -54,6 +53,7 @@ a:hover:not([class*="btn"]) {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .top-margin {
@@ -117,6 +117,11 @@ a:hover:not([class*="btn"]) {
 .src-btn:hover {
   background: $primary-color;
   color: white;
+}
+
+.button {
+  margin: 0 auto;
+  padding-top: 2rem;
 }
 
 // styles above 700px
