@@ -77,7 +77,6 @@ a:hover:not([class*="btn"]) {
   content: "";
   width: 0%;
   height: 101%;
-  // transform: translateX(-100%);
   background-color: $primary-color;
   transition: width 0.3s;
   z-index: -99;
@@ -124,9 +123,19 @@ a:hover:not([class*="btn"]) {
   padding-top: 2rem;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 // styles above 700px
 @media screen and (min-width: 700px) {
   .section-title {
-    font-size: 3.8rem;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .section-title {
+    font-size: 3.5rem;
   }
 }
