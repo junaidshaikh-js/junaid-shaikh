@@ -11,9 +11,98 @@
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑‍💻</text></svg>"
     />
 
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/482053182b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/index.css" />
+
     <title>Junaid - Contact</title>
   </head>
   <body>
-    <h1>Contact Page</h1>
+    <!-- header section -->
+    <div class="header-wrapper">
+      <header class="header">
+        <div class="logo">
+          <a href="./index.html"> <img src="./assets/logo.png" alt="logo" /></a>
+          <div class="bars">
+            <i class="fas fa-2x fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="navbar-wrapper">
+          <nav>
+            <ul class="nav-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./projects.html">Projects</a></li>
+              <li><a href="./blogs.html">Blogs</a></li>
+              <li>
+                <a href="./contact.html" class="btn btn-primary" role="button"
+                  >Say Hello</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+
+      <!-- contact form -->
+      <div class="contact-form-wrapper">
+        <h1 class="title">Thank you for taking the time to get in touch with me. How can I help you today?</h1>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+          <input type="hidden" name="apikey" value="c9cc965b-7e85-4dc2-96c1-875abc4c9e1c">
+          
+          <label for="name" class="visually-hidden">Name</label>
+          <input type="text" name="name" id="name" placeholder="Name" required>
+
+          <label for="email" class="visually-hidden">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+
+          <label for="message" class="visually-hidden">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+          
+          <input type="hidden" name="redirect" value="https://web3forms.com/success">
+          
+          <button type="submit" class="btn btn-primary">Submit Form</button>
+      
+      </form>
+      </div>
+
+      <!-- footer section -->
+      <div class="footer-section-wrapper">
+        <footer class="footer-section section">
+          <h2 class="section-title">Connect With Me!</h2>
+  
+          <ul class="social-links">
+            <li>
+              <a href="https://twitter.com/junaidshaikh_js"
+                ><i class="fab fa-2x fa-twitter-square"></i> Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/junaidshaikhjs/"
+                ><i class="fab fa-2x fa-linkedin"></i> LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/junaidshaikh-js"
+                ><i class="fab fa-2x fa-github-square"></i> Github</a
+              >
+            </li>
+          </ul>
+          <p class="attribution">Made with 💖 by Junaid</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
