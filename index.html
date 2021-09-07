@@ -30,25 +30,27 @@
       <header class="header">
         <div class="logo">
           <a href="./index.html"> <img src="./assets/logo.png" alt="logo" /></a>
-          <div class="bars">
+          <div class="bars" aria-label="Menu Button">
             <i class="fas fa-2x fa-bars"></i>
           </div>
         </div>
-
-        <div class="navbar-wrapper">
-          <nav>
-            <ul class="nav-links">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./projects.html">Projects</a></li>
-              <li><a href="./blogs.html">Blogs</a></li>
-              <li>
-                <a href="./contact.html" class="btn btn-primary" role="button"
-                  >Say Hello</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
+        
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a href="./index.html" class="active">Home</a>
+            </li>
+            <li>
+              <a href="./projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="./blogs.html">Blogs</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="btn btn-primary" role="button">Say Hello</a>
+            </li>
+          </ul>
+        </nav>
       </header>
     </div>
 
@@ -59,13 +61,13 @@
         <section class="hero-section">
           <div class="hero-section__intro">
             <h1 class="title">Hi, I'm Junaid 👋</h1>
-            <p class="subtitle">
+            <p>
               A front-end developer. I code beautiful websites and I love it.
             </p>
           </div>
           <div class="hero-section__buttons">
-            <button class="btn btn-primary">Hire Me</button>
-            <button class="btn btn-secondary">Download CV</button>
+            <a href="mailto: sj.shaikhjunaid@gmail.com"><button class="btn btn-primary">Hire Me</button></a>
+            <a href="./assets/resume.pdf" download="Junaid's Resume"><button class="btn btn-secondary">Download CV</button></a>
           </div>
         </section>
       </div>
@@ -74,7 +76,7 @@
       <div class="about-section-wrapper">
         <section class="section about-section">
           <h2 class="section-title">About Me</h2>
-          <div class="about-section__content top-margin">
+          <div class="top-margin">
             <p>
               Hi! I am Junaid Shaikh from India. I enjoy buinding things that
               live on internet
@@ -95,7 +97,7 @@
 
       <!-- skills section -->
       <div class="skill-section-wrapper border-box-shadow">
-        <section class="section skill-section">
+        <section class="skill-section section">
           <header>
             <h2 class="section-title">Skills</h2>
           </header>
@@ -112,7 +114,7 @@
 
       <!-- project section -->
       <div class="project-section-wrapper">
-        <section class="section project-section">
+        <section class="project-section section ">
           <h2 class="section-title">My Recent Work</h2>
 
           <div class="project-section__content">
@@ -141,9 +143,9 @@
                   </ul>
                 </div>
                 <div class="project-item__info-links">
-                  <a href="#" class="src-btn">View Live</a>
+                  <a href="https://translateintoferblatin.netlify.app/" class="src-btn">View Live</a>
 
-                  <a href="#" class="src-btn">Github</a>
+                  <a href="https://github.com/junaidshaikh-js/Ferb-latin-translation-app" class="src-btn">Github</a>
                 </div>
               </div>
             </article>
@@ -175,9 +177,9 @@
                   </ul>
                 </div>
                 <div class="project-item__info-links">
-                  <a href="#" class="src-btn">View Live</a>
+                  <a href="https://translate-into-banana.netlify.app/" class="src-btn">View Live</a>
 
-                  <a href="#" class="src-btn">Github</a>
+                  <a href="https://github.com/junaidshaikh-js/banana-talk-translationApp" class="src-btn">Github</a>
                 </div>
               </div>
             </article>
@@ -204,9 +206,9 @@
                   </ul>
                 </div>
                 <div class="project-item__info-links">
-                  <a href="#" class="src-btn">View Live</a>
+                  <a href="https://junaidshaikh-js.github.io/dog-app/" class="src-btn">View Live</a>
 
-                  <a href="#" class="src-btn">Github</a>
+                  <a href="https://github.com/junaidshaikh-js/dog-app" class="src-btn">Github</a>
                 </div>
               </div>
             </article>
@@ -223,28 +225,26 @@
           <h2 class="section-title">Read My Articles</h2>
           <article class="blog-article">
             <div class="blog-date">
-              <time>22 Sept 2021</time>
+              <time datetime="2021-7-11">Jul 11, 2021</time>
               <p>3 min read</p>
             </div>
             <div>
-              <h3 class="blog-title">CSS Specificity Explained</h3>
+              <h3 class="blog-title"><a href="https://junaidshaikh.hashnode.dev/css-specificity-explained">CSS Specificity Explained</a></h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae,
-                voluptas!
+                CSS specificity is often time ignored but knowing how it works may help you debug your CSS code. This article explain the specificity of each type of selector.
               </p>
             </div>
           </article>
 
           <article class="blog-article">
             <div class="blog-date">
-              <time>22 Sept 2021</time>
+              <time datetime="2021-6-28">Jun 28, 2021</time>
               <p>3 min read</p>
             </div>
             <div>
-              <h3 class="blog-title">CSS Specificity Explained</h3>
+              <h3 class="blog-title"><a href="https://junaidshaikh.hashnode.dev/3-ways-to-create-arrays-in-javascript-and-array-fill-method">3 Ways to Create Arrays in JavaScript and Array fill() method</h3></a>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae,
-                voluptas!
+                The array is a linear data structure and used to store multiple values in a single variable at a time. Learn 3 ways to create arrays in JavaScript.
               </p>
             </div>
           </article>
@@ -259,7 +259,7 @@
         <div class="invite-box-wrapper">
           <div class="invite-box">
             <p>Interested in working together? We should talk.</p>
-            <button class="btn"><a href="./blogs.html" class="btn btn-primary">Let's do this</a></button>
+            <button class="btn"><a href="./contact.html" class="btn btn-primary">Let's do this</a></button>
           </div>
           </div>
       </section>
@@ -270,11 +270,11 @@
           <h2 class="section-title">Connect With Me!</h2>
           
             <ul class="social-links">
-              <li><a href="#"><i class="fab fa-2x fa-twitter"></i>Twitter</a></li>
-              <li><a href="#"><i class="fab fa-2x fa-twitter"></i>LinkeIn</a></li>
-              <li><a href="#"><i class="fab fa-2x fa-twitter"></i>Github</a></li>
+              <li><a href="https://twitter.com/junaidshaikh_js"><i class="fab fa-2x fa-twitter-square"></i> Twitter</a></li>
+              <li><a href="https://www.linkedin.com/in/junaidshaikhjs/"><i class="fab fa-2x fa-linkedin"></i> LinkedIn</a></li>
+              <li><a href="https://github.com/junaidshaikh-js"><i class="fab fa-2x fa-github-square"></i> Github</a></li>
             </ul>
-          <p>Made with 💖 by Junaid</p>
+          <p class="attribution">Made with 💖 by Junaid</p>
         </footer>
       </div>
 
