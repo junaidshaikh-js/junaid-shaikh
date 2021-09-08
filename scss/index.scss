@@ -160,20 +160,24 @@
   }
 
   .project-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
     padding: 1rem;
     margin: 2rem 0;
     max-width: 380px;
     text-align: center;
 
     &__image {
-      height: 180px;
       padding: 1rem 0;
       border-top: 2px solid $black-background;
+      border-bottom: 2px solid $black-background;
     }
 
     &__info {
-      border-top: 2px solid $black-background;
-      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
       &-title {
         padding-top: 1rem;
@@ -181,7 +185,7 @@
       }
 
       &-tags {
-        margin: 1rem 0 2rem 0;
+        margin: 1rem 0 1rem 0;
         text-align: left;
       }
 
@@ -328,12 +332,15 @@
   // blog section
   .blog-section-wrapper {
     margin-top: 6rem;
+
+    .section-title {
+      margin-bottom: 4rem;
+    }
   }
 
   .blog-article {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 4rem;
 
     .blog-date {
       flex-basis: 40%;

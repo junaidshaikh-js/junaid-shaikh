@@ -6,6 +6,7 @@ $font-family: "Jost", sans-serif;
 body {
   font-family: $font-family;
   color: #141c3a;
+  line-height: 2rem;
 }
 
 a:hover:not([class*="btn"]) {
@@ -53,7 +54,6 @@ a:hover:not([class*="btn"]) {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 .top-margin {
@@ -76,9 +76,10 @@ a:hover:not([class*="btn"]) {
   left: 0;
   content: "";
   width: 0%;
-  height: 101%;
+  height: 100%;
   background-color: $primary-color;
   transition: width 0.3s;
+  border: 2px solid $primary-color;
   z-index: -99;
 }
 
