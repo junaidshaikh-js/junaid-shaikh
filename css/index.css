@@ -42,6 +42,7 @@ a {
 body {
   font-family: "Jost", sans-serif;
   color: #141c3a;
+  line-height: 2rem;
 }
 
 a:hover:not([class*="btn"]) {
@@ -89,7 +90,6 @@ a:hover:not([class*="btn"]) {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 .top-margin {
@@ -112,9 +112,10 @@ a:hover:not([class*="btn"]) {
   left: 0;
   content: "";
   width: 0%;
-  height: 101%;
+  height: 100%;
   background-color: #7c3aed;
   transition: width 0.3s;
+  border: 2px solid #7c3aed;
   z-index: -99;
 }
 
@@ -194,6 +195,7 @@ a:hover:not([class*="btn"]) {
   margin: 2rem 0 1rem 0;
   border: 2px solid #141c3a;
   font-size: 1.2rem;
+  border-radius: 10px;
 }
 
 .contact-form-wrapper form button {
@@ -357,6 +359,9 @@ a:hover:not([class*="btn"]) {
 }
 
 .project-section .project-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 1fr;
   padding: 1rem;
   margin: 2rem 0;
   max-width: 380px;
@@ -364,14 +369,15 @@ a:hover:not([class*="btn"]) {
 }
 
 .project-section .project-item__image {
-  height: 180px;
   padding: 1rem 0;
   border-top: 2px solid #141c3a;
+  border-bottom: 2px solid #141c3a;
 }
 
 .project-section .project-item__info {
-  border-top: 2px solid #141c3a;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-section .project-item__info-title {
@@ -380,7 +386,7 @@ a:hover:not([class*="btn"]) {
 }
 
 .project-section .project-item__info-tags {
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
   text-align: left;
 }
 
@@ -504,10 +510,12 @@ a:hover:not([class*="btn"]) {
   .blog-section-wrapper {
     margin-top: 6rem;
   }
+  .blog-section-wrapper .section-title {
+    margin-bottom: 4rem;
+  }
   .blog-article {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 4rem;
   }
   .blog-article .blog-date {
     flex-basis: 40%;
