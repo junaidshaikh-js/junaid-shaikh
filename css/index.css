@@ -383,6 +383,7 @@ a:hover:not([class*="btn"]) {
 .project-section .project-item__info-title {
   padding-top: 1rem;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .project-section .project-item__info-tags {
