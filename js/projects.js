@@ -132,7 +132,7 @@ function createProjectItem(projectSection) {
     <div class="project-item__image">
         <img
           src=${projectObj.img}
-          alt=""
+          alt="" loading="lazy"
         />
       </div>
 
