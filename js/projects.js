@@ -137,7 +137,7 @@ function createProjectItem(projectSection) {
       </div>
 
       <div class="project-item__info">
-        <h3 class="project-item__info-title">${projectObj.title}</h3>
+        <h2 class="project-item__info-title">${projectObj.title}</h2>
 
         <p class="project-item__info-description">
           ${projectObj.description}
