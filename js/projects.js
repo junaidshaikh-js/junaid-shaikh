@@ -55,17 +55,17 @@ const projectData = [
     description:
       "A mini React project. When a user click on the given button, the popular books in the genre is displayed as a list.",
     tags: ["React JS"],
-    liveLink: "https://ei3xs.csb.app/",
-    sourceLink: "https://codesandbox.io/s/popular-books-ei3xs",
+    liveLink: "https://sgyiu.csb.app/",
+    sourceLink: "https://github.com/junaidshaikh-js/book-recommendation",
   },
   {
     img: "./assets/project-screenshots/flag-interpreter.png",
-    title: "Flag Interprete",
+    title: "Flag Interpreter",
     description:
       " This is my first React App. Given a emoji of Flag, it will tell you what flag it it. It's fun. Check it out.",
     tags: ["React JS"],
     liveLink: "https://z8rd2.csb.app/",
-    sourceLink: "https://codesandbox.io/s/flag-interpreter-z8rd2",
+    sourceLink: "https://github.com/junaidshaikh-js/flag-interpreter",
   },
   {
     img: "./assets/project-screenshots/ferb-latin-ss.png",
