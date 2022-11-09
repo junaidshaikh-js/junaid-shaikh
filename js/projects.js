@@ -12,7 +12,7 @@ const projectData = [
     description: "A social media app for automobile enthusiast",
     tags: ["React JS", "Redux", "CSS"],
     liveLink: "https://autocrew.vercel.app/login",
-    sourceLink: "https://github.com/junaidshaikh-js/autocrew"
+    sourceLink: "https://github.com/junaidshaikh-js/autocrew",
   },
   {
     img: "./assets/project-screenshots/autodecore-store.png",
@@ -45,6 +45,15 @@ const projectData = [
     tags: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://hydrogen-ui.netlify.app/",
     sourceLink: "https://github.com/junaidshaikh-js/hydrogen",
+  },
+  {
+    img: "./assets/project-screenshots/clockwork.png",
+    title: "Clockwork",
+    description:
+      "Clockwork combines Pomodoro Timer with Task Management, it is a app that will motivate you to stay focused and get things done.",
+    tags: ["React", "SCSS"],
+    liveLink: "https://clockwork-app.netlify.app/",
+    sourceLink: "https://github.com/junaidshaikh-js/clockwork",
   },
   {
     img: "./assets/project-screenshots/stocklossprofit.png",
