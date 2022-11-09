@@ -366,6 +366,11 @@ a:hover:not([class*="btn"]) {
   margin: 2rem 0;
   max-width: 380px;
   text-align: center;
+  display: none;
+}
+
+.project-section .project-item:nth-child(1), .project-section .project-item:nth-child(2), .project-section .project-item:nth-child(3) {
+  display: block;
 }
 
 .project-section .project-item__image {

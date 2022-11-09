@@ -2,7 +2,50 @@ const projectSectionContent = document.querySelector(
   ".project-section__content"
 );
 
+const loadMore = document.querySelector(".loadmore");
+let currentItem = 3;
+
 const projectData = [
+  {
+    img: "./assets/project-screenshots/autocrew.png",
+    title: "AutoCrew",
+    description: "A social media app for automobile enthusiast",
+    tags: ["React JS", "Redux", "CSS"],
+    liveLink: "https://autocrew.vercel.app/login",
+    sourceLink: "https://github.com/junaidshaikh-js/autocrew"
+  },
+  {
+    img: "./assets/project-screenshots/autodecore-store.png",
+    title: "AutoDecore",
+    description: "An e-commerce website for automobile accessories",
+    tags: ["React JS", "React Router", "CSS"],
+    liveLink: "https://autodecore-store.netlify.app/",
+    sourceLink: "https://github.com/junaidshaikh-js/autodecore-store",
+  },
+  {
+    img: "./assets/project-screenshots/autotube.png",
+    title: "AutoTube",
+    description: "A video library for everything related to automobiles.",
+    tags: ["React JS", "React Router", "SCSS"],
+    liveLink: "https://autotube-app.netlify.app/  ",
+    sourceLink: "https://github.com/junaidshaikh-js/autotube",
+  },
+  {
+    img: "./assets/project-screenshots/simple-note.png",
+    title: "Simple Note",
+    description: "A note taking app",
+    tags: ["React JS", "TypeScript", "Tailwind"],
+    liveLink: "https://simple-note1.netlify.app/ ",
+    sourceLink: "https://github.com/junaidshaikh-js/simple-note",
+  },
+  {
+    img: "./assets/project-screenshots/hydrogen.png",
+    title: "Hydrogen UI",
+    description: "Component Library",
+    tags: ["HTML", "CSS", "JavaScript"],
+    liveLink: "https://hydrogen-ui.netlify.app/",
+    sourceLink: "https://github.com/junaidshaikh-js/hydrogen",
+  },
   {
     img: "./assets/project-screenshots/stocklossprofit.png",
     title: "Stock Profit & Loss Calculator",
@@ -124,7 +167,6 @@ function createTags(tagArr) {
   return output.join(" ");
 }
 
-console.log(createTags(projectData[0].tags));
 
 function createProjectItem(projectSection) {
   let projectItemList = projectData.map((projectObj) => {
@@ -133,6 +175,8 @@ function createProjectItem(projectSection) {
         <img
           src=${projectObj.img}
           alt="" loading="lazy"
+          height="360"
+          width="640"
         />
       </div>
 
@@ -172,4 +216,20 @@ function createProjectItem(projectSection) {
 
 window.addEventListener("DOMContentLoaded", () => {
   createProjectItem(projectSectionContent);
+});
+
+loadMore.addEventListener("click", (e) => {
+  const elementList = [...document.querySelectorAll(".project-item")];
+
+  for (let i = currentItem; i <= currentItem + 2; i++) {
+    if (elementList[i]) {
+      elementList[i].style.display = "block";
+    }
+  }
+
+  currentItem += 3;
+
+  if (currentItem >= elementList.length) {
+    e.target.style.display = "none";
+  }
 });
